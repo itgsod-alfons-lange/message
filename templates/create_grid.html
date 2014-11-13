@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block body %}
+    <table>
+    {% set letterarr = ['A','B','C','D','E','F','G','H','I'] %}
+    {% for i in range(9) %}
+        <tr>
+        {% for j in range(9) %}
+            <td>
+                <input type="text" name="{{ j|string + letterarr[i] }}" class="{% if j == 2 or j == 5 %}{{ "right-margin " }}{% endif %}{% if i == 2 or i == 5 %}{{ "bottom-margin " }}{% endif %}{% if j == 3 or j == 6 %}{{ "left-margin " }}{% endif %}{% if i == 3 or i == 6 %}{{ "top-margin " }}{% endif %}">
+            </td>
+        {% endfor %}
+        </tr>
+    {% endfor %}
+    </table>
+{% endblock %}

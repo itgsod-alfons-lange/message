@@ -5,14 +5,44 @@ body {background-color: lemonchiffon;
 }
 
 .message{
-
     border: 2px solid red;
     margin: 1%;
     width: 23%;
     height:100px;
     float: left;
     overflow: scroll;
+}
 
+input{
+    width:50px;
+    height:50px;
+    margin:0px;
+    padding:0px;
+    font-size:50px;
+}
+
+.right-margin{
+    margin-right:1px;
+    border-right:4px solid grey;
+}
+
+.left-margin{
+    margin-left:1px;
+    border-left:4px solid grey;
+}
+
+.top-margin{
+    margin-top:1px;
+    border-top:4px solid grey;
+}
+
+.bottom-margin{
+    margin-bottom:1px;
+    border-bottom:4px solid grey;
+}
+
+table{
+    margin:auto;
 }
 
 .message p{
